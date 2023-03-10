@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/shop"
+        android:name="com.example.shopapp.shop"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_shop_to_main"
+            app:destination="@id/main" />
+        <action
+            android:id="@+id/action_shop_to_theProduct2"
+            app:destination="@id/theProduct" />
+        <action
+            android:id="@+id/action_shop_to_basket"
+            app:destination="@id/basket" />
+    </fragment>
+    <fragment
+        android:id="@+id/basket"
+        android:name="com.example.shopapp.basket"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basket_to_main"
+            app:destination="@id/main" />
+        <action
+            android:id="@+id/action_basket_to_shop"
+            app:destination="@id/shop" />
+    </fragment>
+    <fragment
+        android:id="@+id/theProduct"
+        android:name="com.example.shopapp.theProduct"
+        android:label="fragment_the_product"
+        tools:layout="@layout/fragment_the_product" >
+        <action
+            android:id="@+id/action_theProduct_to_shop2"
+            app:destination="@id/shop" />
+    </fragment>
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.shopapp.main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_shop"
+            app:destination="@id/shop" />
+        <action
+            android:id="@+id/action_main_to_basket"
+            app:destination="@id/basket" />
+    </fragment>
+</navigation>
