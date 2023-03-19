@@ -14,4 +14,4 @@ The application includes unit tests for the networking layer and model layer usi
 ## Pictures
 
 
-<img src="https://github.com/Haris-Alsaman/Simple-Shop-Android/blob/main/Picture2.png" width="880">
+<img src="https://github.com/Haris-Alsaman/Simple-Shop-Android/blob/main/Picture.png" width="880">
