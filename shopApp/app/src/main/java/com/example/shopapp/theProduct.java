@@ -71,7 +71,7 @@ String id ;
                 double DouAmount = Double.valueOf(intAmount);
                 double price = Double.valueOf(product.getPrice());
                 double ddon= DouAmount * price;
-                Price.setText(ddon + " Tl");
+                Price.setText(ddon + " TL");
             }
         });
         minus.setOnClickListener(new View.OnClickListener() {

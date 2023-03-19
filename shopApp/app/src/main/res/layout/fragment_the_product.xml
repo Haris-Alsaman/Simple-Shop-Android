@@ -44,6 +44,8 @@
         android:id="@+id/FragmentproductPrice"
         android:layout_width="107dp"
         android:layout_height="26dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
